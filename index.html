@@ -34,7 +34,8 @@
         var lyr = L.tileLayer('./{z}/{x}/{y}.png', {
 		tms: true, 
 		opacity: 1.0, 
-		attribution: "",
+		attribution: "© Environment Agency copyright and/or database right 2019",
+		minZoom: 12,
 		maxNativeZoom: 15
 	});
 		
@@ -49,7 +50,7 @@
         var map = L.map('map', {
             center: [50.6092206368723, -3.556253700041309],
             zoom: 15,
-            minZoom: 8,
+            minZoom: 4,
             maxZoom: 18,
             layers: [grey, lyr]
         });
