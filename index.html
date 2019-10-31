@@ -32,11 +32,18 @@
 
         // Overlay layers (TMS)
         var lyr = L.tileLayer('./{z}/{x}/{y}.png', {
-			tms: true, 
-			opacity: 1.0, 
-			attribution: "",
-			maxNativeZoom: 15
-		});
+		tms: true, 
+		opacity: 1.0, 
+		attribution: "",
+		maxNativeZoom: 15
+	});
+		
+        var lyr1 = L.tileLayer('https://geoffrowland.github.io/EU-DEM//{z}/{x}/{y}.png', {
+		tms: true, 
+		opacity: 1.0,
+		maxNativeZoom: 12, 
+		attribution: "EU-DEM &copy; European Environment Agency (EEA) under the framework of the <a href = 'https://land.copernicus.eu/imagery-in-situ/eu-dem' target = '_blank'>Copernicus</a> programme"
+	});
 
         // Map
         var map = L.map('map', {
@@ -48,7 +55,7 @@
         });
 
         var basemaps = {"OpenStreetMap": osm, "Grey background": grey}
-        var overlaymaps = {"Layer": lyr}
+        var overlaymaps = {"EU-DEM 25m" : lyr1, "DTM 2m": lyr}
 
         // Add base layers
         L.control.layers(basemaps, overlaymaps, {collapsed: true}).addTo(map);
