@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
     <TileMap version="1.0.0" tilemapservice="http://tms.osgeo.org/1.0.0">
-      <Title>Portishead_Block_Hill_Rend.tif</Title>
+      <Title>Undercliff_2M_New_Cliff_Hill_Rend.tif</Title>
       <Abstract></Abstract>
       <SRS>EPSG:3857</SRS>
-      <BoundingBox minx="-2.72197272811613" miny="51.33688281905519" maxx="-2.57559489171027" maxy="51.51749507711664"/>
-      <Origin x="-2.72197272811613" y="51.33688281905519"/>
+      <BoundingBox minx="-2.99457459346393" miny="50.68740856283394" maxx="-2.85073377228015" maxy="50.79643317715246"/>
+      <Origin x="-2.99457459346393" y="50.68740856283394"/>
       <TileFormat width="256" height="256" mime-type="image/png" extension="png"/>
       <TileSets profile="mercator">
         <TileSet href="10" units-per-pixel="152.87405654296876" order="10"/>
