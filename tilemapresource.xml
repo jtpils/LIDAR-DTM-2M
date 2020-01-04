@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
     <TileMap version="1.0.0" tilemapservice="http://tms.osgeo.org/1.0.0">
-      <Title>Harry_2M_Final_Poly.tif</Title>
+      <Title>NorthDevon_East_b_2M_DTM_Rend.tif</Title>
       <Abstract></Abstract>
       <SRS>EPSG:3857</SRS>
-      <BoundingBox minx="-2.00135553692492" miny="50.61965118874503" maxx="-1.90232487650031" maxy="50.66466069348683"/>
-      <Origin x="-2.00135553692492" y="50.61965118874503"/>
+      <BoundingBox minx="-3.85624107663723" miny="50.78494575233722" maxx="-3.56194475212553" maxy="51.05876675242711"/>
+      <Origin x="-3.85624107663723" y="50.78494575233722"/>
       <TileFormat width="256" height="256" mime-type="image/png" extension="png"/>
       <TileSets profile="mercator">
         <TileSet href="10" units-per-pixel="152.87405654296876" order="10"/>

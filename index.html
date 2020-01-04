@@ -11,15 +11,25 @@
             crossorigin=""/>
             <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
             integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
-            crossorigin=""></script>
+            crossorigin="">
+            </script>
             <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
             <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
-
             <style>
-                body { margin:0; padding:0; }                
-                #map { position:absolute; top:0; bottom:0; width:100%; } /* full size */
+		        html, body { 
+	    	        height: 100%; 
+	    	        padding: 0; 
+	    	        margin: 0; 
+	            }
+	            .leaflet-container {
+                    background:#b3b3b3;
+                } 
+                #map { 
+		        	position: absolute; 
+		        	top:0; 
+			        bottom: 0;
+			        width: 100%; } /* full size */
             </style>
-
         </head>
         <body>
 
@@ -33,7 +43,7 @@
         var osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'});
 
         //  .. Grey background
-        var grey = L.tileLayer("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEAAQMAAABmvDolAAABhGlDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1Iw0AcxV9TpSqVgnYQcchQnSyIijpqFYpQodQKrTqYXPoFTRqSFBdHwbXg4Mdi1cHFWVcHV0EQ/ABxcXVSdJES/5cUWsR4cNyPd/ced+8AoV5mqtkxBqiaZaTiMTGTXRUDrwigD92YRkhipj6XTCbgOb7u4ePrXZRneZ/7c/QqOZMBPpF4lumGRbxBPLVp6Zz3icOsKCnE58SjBl2Q+JHrsstvnAsOCzwzbKRT88RhYrHQxnIbs6KhEk8SRxRVo3wh47LCeYuzWq6y5j35C4M5bWWZ6zSHEMcilpCECBlVlFCGhSitGikmUrQf8/APOv4kuWRylcDIsYAKVEiOH/wPfndr5ifG3aRgDOh8se2PYSCwCzRqtv19bNuNE8D/DFxpLX+lDsx8kl5raZEjILQNXFy3NHkPuNwBBp50yZAcyU9TyOeB9zP6pizQfwv0rLm9Nfdx+gCkqavEDXBwCIwUKHvd491d7b39e6bZ3w9rlnKkvO52TgAAAAlwSFlzAAAuIwAALiMBeKU/dgAAAAd0SU1FB+MHEgk5Lsm3O3IAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAAA1BMVEWzs7P94mLeAAAAH0lEQVQYGe3BAQ0AAADCIPunfg43YAAAAAAAAAAA5wIhAAAB9aK9BAAAAABJRU5ErkJggg==");
+        var grey = L.tileLayer("");
 
         // Overlay layers (TMS)
         var lyr = L.tileLayer('./{z}/{x}/{y}.png', {
